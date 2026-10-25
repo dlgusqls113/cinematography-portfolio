@@ -50,12 +50,12 @@
     .credentials li{padding:10px 0;border-bottom:1px solid var(--line);font-size:12px;line-height:1.5;color:#d2d0c8}
     .projects-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 26px}
     .project{display:block;min-width:0}
-    .project-image{aspect-ratio:1.62/1;overflow:hidden;background:#242521}
-    .project-image img{display:block;width:100%;height:100%;object-fit:cover;filter:brightness(.8) saturate(.82);transition:transform .65s,filter .4s}
-    .project:hover .project-image img{transform:scale(1.035);filter:brightness(.96) saturate(.95)}
+    .project-image{position:relative;aspect-ratio:16/9;overflow:hidden;background:#080807}
+    .project-image iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
     .project-info{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-top:13px}
     .project-title{font-size:15px;font-weight:400}
     .project-type{margin-top:6px}
+    .project-role{margin-top:7px;font-size:11px;color:var(--muted)}
     .project-year{font:10px 'DM Mono',monospace;color:var(--muted);white-space:nowrap}
     .grading-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:42px 24px}
     .grade-pair{min-width:0}
@@ -97,7 +97,7 @@
       .section{padding:48px 0 58px}
       .section-head{margin-bottom:22px}
       .projects-grid,.grading-grid{grid-template-columns:1fr;gap:30px}
-      .project-image{aspect-ratio:1.5/1}
+      .project-image{aspect-ratio:16/9}
       .credentials{grid-template-columns:1fr}
       .contact{grid-template-columns:1fr;gap:34px;padding:58px 0 64px}
       .contact-right{justify-self:start;text-align:left}
@@ -155,10 +155,10 @@
       <section class="section projects" id="work">
         <div class="section-head"><div class="mono">02 / SELECTED WORKS</div><div class="mono">2024~</div></div>
         <div class="projects-grid">
-          <a class="project" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1300&q=85" alt="해 뜰 무렵 안개에 잠긴 산 풍경"></div><div class="project-info"><div><div class="project-title">고요의 사이</div><div class="mono project-type">단편 영화 · 촬영</div></div><div class="project-year">2025</div></div></a>
-          <a class="project" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1300&q=85" alt="산 능선 위 밤하늘"></div><div class="project-info"><div><div class="project-title">푸른 시간 이후</div><div class="mono project-type">아티스트 필름 · 컬러</div></div><div class="project-year">2024</div></div></a>
-          <a class="project" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1300&q=85" alt="고요한 해변에 부서지는 부드러운 파도"></div><div class="project-info"><div><div class="project-title">소금 / 피부</div><div class="mono project-type">패션 필름 · 촬영</div></div><div class="project-year">2023</div></div></a>
-          <a class="project" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1300&q=85" alt="저녁빛 아래 고요한 호수와 산"></div><div class="project-info"><div><div class="project-title">돌아갈 곳</div><div class="mono project-type">다큐멘터리 · 컬러</div></div><div class="project-year">2022</div></div></a>
+          <article class="project"><div class="project-image"><iframe src="https://www.youtube-nocookie.com/embed/oPQIbEbFvrY?rel=0" title="100 — 액션 단편영화" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-info"><div><div class="project-title">100</div><div class="mono project-type">액션 · 단편영화</div><div class="project-role">촬영감독</div></div><div class="project-year">2026</div></div></article>
+          <article class="project"><div class="project-image"><iframe src="https://www.youtube-nocookie.com/embed/_lahzPwqpdA?rel=0" title="상처라는 이름에 — 로맨스 단편영화" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-info"><div><div class="project-title">상처라는 이름에</div><div class="mono project-type">로맨스 · 단편영화</div><div class="project-role">촬영감독</div></div><div class="project-year">2025</div></div></article>
+          <article class="project"><div class="project-image"><iframe src="https://www.youtube-nocookie.com/embed/b7v1mKOHLs4?rel=0" title="하지 — 댄스 단편영화" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-info"><div><div class="project-title">하지</div><div class="mono project-type">댄스 단편영화</div><div class="project-role">촬영감독</div></div><div class="project-year">2025</div></div></article>
+          <article class="project"><div class="project-image"><iframe src="https://www.youtube-nocookie.com/embed/rmG2Tgvwc5s?rel=0" title="Star — 뮤직비디오 커버" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="project-info"><div><div class="project-title">Star</div><div class="mono project-type">뮤직비디오 커버</div><div class="project-role">조연출 · 촬영 · 편집</div></div><div class="project-year">2024</div></div></article>
         </div>
       </section>
 
